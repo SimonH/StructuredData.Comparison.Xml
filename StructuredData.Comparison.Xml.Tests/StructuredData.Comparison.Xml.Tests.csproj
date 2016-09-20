@@ -35,7 +35,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="StructuredData.Comparison, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StructuredData.Comparison.0.1.0\lib\net40\StructuredData.Comparison.dll</HintPath>
+      <HintPath>..\packages\StructuredData.Comparison.0.3.0\lib\net40\StructuredData.Comparison.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -70,6 +70,22 @@
   <ItemGroup>
     <EmbeddedResource Include="TestResources\IgnoredMultipleValues.xml" />
     <EmbeddedResource Include="TestResources\MultipleValues.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\ExtendedListDefaultSettings.xml" />
+    <EmbeddedResource Include="TestResources\ReducedListDefaultSettings.xml" />
+    <EmbeddedResource Include="TestResources\SameListDefaultSettings.xml" />
+    <EmbeddedResource Include="TestResources\SourceList.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\SameListStrictOrderedSettings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\ReducedListStrictOrderedSettings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\BatchRequestExpected.xml" />
+    <EmbeddedResource Include="TestResources\BatchRequestSource.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

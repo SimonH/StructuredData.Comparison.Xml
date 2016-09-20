@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RootElement>
   <FirstValue>first</FirstValue>
-  <SecondValue>#StructuredData.Comparison#Ignore</SecondValue>
+  <SecondValue>StructuredData.Comparison_Ignore</SecondValue>
 </RootElement>

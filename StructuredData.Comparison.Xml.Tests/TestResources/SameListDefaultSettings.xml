@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RootElement>
+  <value>first</value>
+  <anotherValue>second</anotherValue>
+  <MyList>
+    <StructuredData.Comparison_Settings>
+      <ListOptions>Strict,Ordered</ListOptions>
+    </StructuredData.Comparison_Settings>
+    <ListItem>
+      <First>one</First>
+      <Second>eins</Second>
+    </ListItem>
+    <ListItem>
+      <First>two</First>
+      <Second>zwei</Second>
+    </ListItem>
+    <ListItem>
+      <First>three</First>
+      <Second>drei</Second>
+    </ListItem>
+    <ListItem>
+      <First>four</First>
+      <Second>vier</Second>
+    </ListItem>
+  </MyList>
+</RootElement>

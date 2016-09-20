@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RootElement>
+  <value>first</value>
+  <anotherValue>second</anotherValue>
+  <MyList>
+    <ListItem>
+      <First>one</First>
+      <Second>eins</Second>
+    </ListItem>
+    <ListItem>
+      <First>two</First>
+      <Second>zwei</Second>
+    </ListItem>
+    <ListItem>
+      <First>three</First>
+      <Second>drei</Second>
+    </ListItem>
+    <ListItem>
+      <First>four</First>
+      <Second>vier</Second>
+    </ListItem>
+    <ListItem>
+      <First>five</First>
+      <Second>funf</Second>
+    </ListItem>
+  </MyList>
+</RootElement>

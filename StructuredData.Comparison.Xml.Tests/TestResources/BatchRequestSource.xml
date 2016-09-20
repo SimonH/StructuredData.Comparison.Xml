@@ -1,0 +1,51 @@
+﻿<BatchRequest>
+  <Header>
+    <MessageId>3053</MessageId>
+    <MessageType>BATCH_REQUEST</MessageType>
+    <SendingSystem>ErrorHandler</SendingSystem>
+    <TargetSystem>System1</TargetSystem>
+  </Header>
+  <Body>
+    <BatchName>Exception Import Batch</BatchName>
+    <ExceptionBatch>
+      <Source>Source System Name</Source>
+      <CreatedOn>2016-09-20T12:32:07</CreatedOn>
+      <Exceptions>
+        <Exception>
+          <Reference>3053</Reference>
+          <Rule>Validation</Rule>
+          <Description>Description</Description>
+          <LongDescription>Long Description</LongDescription>
+          <KeyFields>
+            <FieldValuePair>
+              <FieldName>KeyValue</FieldName>
+              <Value>key</Value>
+            </FieldValuePair>
+          </KeyFields>
+          <SystemFields>
+            <FieldValuePair>
+              <FieldName>DQS</FieldName>
+              <Value>dqs</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>DQK</FieldName>
+              <Value>dqk</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Code</FieldName>
+              <Value>Code</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Name</FieldName>
+              <Value>Name</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Provider Name</FieldName>
+              <Value>provider</Value>
+            </FieldValuePair>
+          </SystemFields>
+        </Exception>
+      </Exceptions>
+    </ExceptionBatch>
+  </Body>
+</BatchRequest>

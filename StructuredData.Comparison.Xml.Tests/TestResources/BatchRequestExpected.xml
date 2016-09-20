@@ -1,0 +1,51 @@
+﻿<BatchRequest>
+  <Header>
+    <MessageId>StructuredData.Comparison_Ignore</MessageId><!-- ignore changing generated id field -->
+    <MessageType>BATCH_REQUEST</MessageType>
+    <SendingSystem>ErrorHandler</SendingSystem>
+    <TargetSystem>System1</TargetSystem>
+  </Header>
+  <Body>
+    <BatchName>Exception Import Batch</BatchName>
+    <ExceptionBatch>
+      <Source>Source System Name</Source>
+      <CreatedOn>StructuredData.Comparison_Ignore</CreatedOn><!-- ignore changing date/time value -->
+      <Exceptions>
+        <Exception>
+          <Reference>StructuredData.Comparison_Ignore</Reference> <!-- ignore generated reference field -->
+          <Rule>Validation</Rule>
+          <Description>Description</Description>
+          <LongDescription>Long Description</LongDescription>
+          <KeyFields>
+            <FieldValuePair>
+              <FieldName>KeyValue</FieldName>
+              <Value>key</Value>
+            </FieldValuePair>
+          </KeyFields>
+          <SystemFields>
+            <FieldValuePair>
+              <FieldName>DQS</FieldName>
+              <Value>dqs</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>DQK</FieldName>
+              <Value>dqk</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Code</FieldName>
+              <Value>Code</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Name</FieldName>
+              <Value>Name</Value>
+            </FieldValuePair>
+            <FieldValuePair>
+              <FieldName>Provider Name</FieldName>
+              <Value>provider</Value>
+            </FieldValuePair>
+          </SystemFields>
+        </Exception>
+      </Exceptions>
+    </ExceptionBatch>
+  </Body>
+</BatchRequest>

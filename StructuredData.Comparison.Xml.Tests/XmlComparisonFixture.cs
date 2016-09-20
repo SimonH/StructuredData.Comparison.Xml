@@ -11,7 +11,7 @@ namespace StructuredData.Comparison.Xml.Tests
         private string LoadEmbeddedResource(string file)
         {
             var array = Assembly.GetAssembly(typeof(XmlComparisonFixture)).GetManifestResourceNames();
-            var path = array.FirstOrDefault(s => s.EndsWith(file));
+            var path = array.FirstOrDefault(s => s.EndsWith("." + file));
             if (path != null)
             {
                 var stream = Assembly.GetAssembly(typeof(XmlComparisonFixture)).GetManifestResourceStream(path);
@@ -21,30 +21,21 @@ namespace StructuredData.Comparison.Xml.Tests
         }
 
         [Test]
-        public void ComparingSameXmlObject()
+        [TestCase("SimpleValues.xml", "SimpleValues.xml", true, TestName = "SameXmlObject")]
+        [TestCase("SimpleValues.xml", "DifferentSimpleValues.xml", false, TestName = "SameXmlObjectDifferentValues")]
+        [TestCase("MultipleValues.xml", "IgnoredMultipleValues.xml", true, TestName = "IgnoringValues")]
+        [TestCase("SourceList.xml", "SameListDefaultSettings.xml", true, TestName = "SameListDefaultSettings")]
+        [TestCase("SourceList.xml", "ReducedListDefaultSettings.xml", true, TestName = "ReducedListDefaultSettings")]
+        [TestCase("SourceList.xml", "ExtendedListDefaultSettings.xml", false, TestName = "ExtendedListDefaultSettings")]
+        [TestCase("SourceList.xml", "SameListStrictOrderedSettings.xml", true, TestName = "SameListStrictOrderedSettings")]
+        [TestCase("SourceList.xml", "ReducedListStrictOrderedSettings.xml", false, TestName = "ReducedListStrictOrderedSettings")]
+        [TestCase("BatchRequestSource.xml", "BatchRequestExpected.xml", true, TestName = "BatchRequestWithIgnoredValues")]
+        public void ComparingXml(string source, string result, bool expectNullOrWhitespace)
         {
-            var data1 = LoadEmbeddedResource(@"SimpleValues.xml");
-            var data2 = LoadEmbeddedResource(@"SimpleValues.xml");
+            var data1 = LoadEmbeddedResource(source);
+            var data2 = LoadEmbeddedResource(result);
             var candidate = data1.ContentComparison(data2, "application/xml");
-            Assert.True(string.IsNullOrWhiteSpace(candidate));
-        }
-
-        [Test]
-        public void ComparingXmlObjectsWithDifferentValues()
-        {
-            var data1 = LoadEmbeddedResource(@"SimpleValues.xml");
-            var data2 = LoadEmbeddedResource(@"DifferentSimpleValues.xml");
-            var candidate = data1.ContentComparison(data2, "application/xml");
-            Assert.False(string.IsNullOrWhiteSpace(candidate));
-        }
-
-        [Test]
-        public void ComparingXmlObjectsWithIgnoredValues()
-        {
-            var data1 = LoadEmbeddedResource(@"MultipleValues.xml");
-            var data2 = LoadEmbeddedResource(@"IgnoredMultipleValues.xml");
-            var candidate = data1.ContentComparison(data2, "application/xml");
-            Assert.True(string.IsNullOrWhiteSpace(candidate));
+            Assert.That(string.IsNullOrWhiteSpace(candidate), Is.EqualTo(expectNullOrWhitespace));
         }
     }
 }

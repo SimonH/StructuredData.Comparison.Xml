@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RootElement>
+  <value>first</value>
+  <anotherValue>second</anotherValue>
+  <MyList>
+    <ListItem>
+      <First>one</First>
+      <Second>eins</Second>
+    </ListItem>
+    <ListItem>
+      <First>four</First>
+      <Second>vier</Second>
+    </ListItem>
+  </MyList>
+</RootElement>
