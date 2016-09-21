@@ -5,7 +5,7 @@ using StructuredData.Comparison.Interfaces;
 namespace StructuredData.Comparison.Xml.Exports
 {
     [Export(typeof(ICreateStructuredDataWalkers))]
-    [ExportMetadata("MimeType", "application/xml")]
+    [ExportMetadata("MimeType", "text/xml")]
     public class WalkerCreator : ICreateStructuredDataWalkers
     {
         public IEnumerable<IStructuredDataNode> CreateWalker(string data)

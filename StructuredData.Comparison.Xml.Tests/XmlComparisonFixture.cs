@@ -34,7 +34,7 @@ namespace StructuredData.Comparison.Xml.Tests
         {
             var data1 = LoadEmbeddedResource(source);
             var data2 = LoadEmbeddedResource(result);
-            var candidate = data1.ContentComparison(data2, "application/xml");
+            var candidate = data1.ContentComparison(data2, "text/xml");
             Assert.That(string.IsNullOrWhiteSpace(candidate), Is.EqualTo(expectNullOrWhitespace));
         }
     }
