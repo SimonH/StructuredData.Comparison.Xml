@@ -1,0 +1,27 @@
+﻿<sh:RootElement xmlns:sh="http://sh/1" p4:type="sh:DerivedType" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+  <sh:Item>
+    <sh:MasterDataIds>
+      <StructuredData.Comparison_Settings xmlns="">
+        <ListKey>http://transportMetadata/metadata/1:SystemName</ListKey>
+      </StructuredData.Comparison_Settings>
+      <MasterDataId xmlns="http://transportMetadata/metadata/1">
+        <SystemName>a</SystemName>
+        <Identifier>b</Identifier>
+        <OriginatingSourceIND>false</OriginatingSourceIND>
+      </MasterDataId>
+      <MasterDataId xmlns="http://transportMetadata/metadata/1">
+        <SystemName>c</SystemName>
+        <Identifier>d</Identifier>
+        <OriginatingSourceIND>true</OriginatingSourceIND>
+      </MasterDataId>
+      <MasterDataId xmlns="http://transportMetadata/metadata/1">
+        <SystemName>e</SystemName>
+        <Identifier>f</Identifier>
+        <OriginatingSourceIND>false</OriginatingSourceIND>
+      </MasterDataId>
+    </sh:MasterDataIds>
+    <sh:Name />
+    <sh:Currency>GBP</sh:Currency>
+    <sh:Country>BE</sh:Country>
+  </sh:Item>
+</sh:RootElement>

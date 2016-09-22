@@ -1,0 +1,21 @@
+﻿<RootElement xmlns="http://sh/1">
+  <Content>
+    <Items>
+      <sh:Item xmlns:sh="http://sh/1" p4:type="sh:DerivedType" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">
+        <sh:decValue>1.322040</sh:decValue>
+        <sh:Categorisations>
+          <sh:Categorisation>BND</sh:Categorisation>
+        </sh:Categorisations>
+        <sh:Classifications>
+          <sh:Classification>Corporates</sh:Classification>
+          <sh:Classification>Non-Financials</sh:Classification>
+          <sh:Classification>Oil &amp; Gas</sh:Classification>
+          <sh:Classification>Oil &amp; Gas</sh:Classification>
+          <sh:Classification>Oil &amp; Gas Producers</sh:Classification>
+          <sh:Classification>Integrated Oil &amp; Gas</sh:Classification>
+        </sh:Classifications>
+        <sh:test>r</sh:test>
+      </sh:Item>
+    </Items>
+  </Content>
+</RootElement>

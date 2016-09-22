@@ -16,7 +16,7 @@ namespace StructuredData.Comparison.Xml.Conversion
             }
             var ret = new StructuredDataNode
             {
-                Name = element.Name.ToString(),
+                Name = element.Name.NamespaceName + ":" + element.Name.LocalName, // output as namespace:localName rather than {namespace}localName as this is more standard for a qualified name
                 IsValue = !element.HasElements,
                 Value = element.HasElements ? null : element.Value,
                 Children = element.Elements().Select(el => new XElementConverter().Convert(el)),

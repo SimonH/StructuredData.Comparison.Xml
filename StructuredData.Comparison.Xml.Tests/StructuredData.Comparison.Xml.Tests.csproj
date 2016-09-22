@@ -87,6 +87,16 @@
     <EmbeddedResource Include="TestResources\BatchRequestExpected.xml" />
     <EmbeddedResource Include="TestResources\BatchRequestSource.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\ListOfValues.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestResources\ListOfValuesWithSettings.xml" />
+    <EmbeddedResource Include="TestResources\ListWithNamespaces.xml" />
+    <EmbeddedResource Include="TestResources\ListWithNamespaceWithSettings.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
