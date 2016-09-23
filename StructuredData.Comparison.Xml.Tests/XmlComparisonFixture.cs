@@ -32,7 +32,9 @@ namespace StructuredData.Comparison.Xml.Tests
         [TestCase("BatchRequestSource.xml", "BatchRequestExpected.xml", true, TestName = "BatchRequestWithIgnoredValues")]
         [TestCase("ListOfValues.xml", "ListOfValuesWithSettings.xml", true, TestName = "ListOfValuesAsNodes")]
         [TestCase("ListWithNamespaces.xml", "ListWithNamespaceWithSettings.xml", true, TestName = "ListWithNamespaces")]
-        [TestCase("ListOfValues.xml", "ListOfValuesAsList.xml", true, TestName = "ReducedListOfValuesAsList")]
+        [TestCase("ListOfValues.xml", "ReducedListOfValuesAsList.xml", true, TestName = "ReducedListOfValuesAsList")]
+        [TestCase("ListOfValues.xml", "CaseSensitiveListOfValues.xml", false, TestName = "CaseSensitiveListOfValuesAsList")]
+        [TestCase("SimpleValues.xml", "CaseSensitiveSimpleValues.xml", false, TestName = "CaseSensitiveXmlObject")]
         public void ComparingXml(string source, string result, bool expectNullOrWhitespace)
         {
             var data1 = LoadEmbeddedResource(source);

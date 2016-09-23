@@ -8,8 +8,8 @@
         </sh:Categorisations>
         <sh:Classifications>
           <StructuredData.Comparison_Settings xmlns="">
-            <TreatAsList>false</TreatAsList>
-            <Inherit>false</Inherit>
+            <ListOptions>OfValues</ListOptions>
+            <StringComparison>Ordinal</StringComparison>
           </StructuredData.Comparison_Settings>
           <sh:Classification>a</sh:Classification>
           <sh:Classification>B</sh:Classification>

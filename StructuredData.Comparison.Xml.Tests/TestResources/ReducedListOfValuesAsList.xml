@@ -10,10 +10,9 @@
           <StructuredData.Comparison_Settings xmlns="">
             <ListOptions>OfValues</ListOptions>
           </StructuredData.Comparison_Settings>
-          <sh:Classification>Corporates</sh:Classification>
-          <sh:Classification>Non-Financials</sh:Classification>
-          <sh:Classification>Oil &amp; Gas</sh:Classification>
-          <sh:Classification>Integrated Oil &amp; Gas</sh:Classification>
+          <sh:Classification>B</sh:Classification>
+          <sh:Classification>d</sh:Classification>
+          <sh:Classification>f</sh:Classification>
         </sh:Classifications>
         <sh:test>r</sh:test>
       </sh:Item>
