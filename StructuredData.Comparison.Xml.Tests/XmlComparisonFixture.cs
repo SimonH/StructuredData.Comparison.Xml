@@ -39,6 +39,10 @@ namespace StructuredData.Comparison.Xml.Tests
         {
             var data1 = LoadEmbeddedResource(source);
             var data2 = LoadEmbeddedResource(result);
+            if(data1 == null || data2 == null)
+            {
+                Assert.Fail("Could not load data");
+            }
             var candidate = data1.ContentComparison(data2, "text/xml");
             Assert.That(string.IsNullOrWhiteSpace(candidate), Is.EqualTo(expectNullOrWhitespace));
         }

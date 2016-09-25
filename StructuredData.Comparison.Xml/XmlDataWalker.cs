@@ -27,7 +27,7 @@ namespace StructuredData.Comparison.Xml
             {
                 yield break;
             }
-            yield return new XElementConverter().Convert(_element);
+            yield return XElementConverter.Convert(_element);
         }
 
         IEnumerator IEnumerable.GetEnumerator()

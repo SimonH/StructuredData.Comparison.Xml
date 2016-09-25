@@ -35,7 +35,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="StructuredData.Comparison, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StructuredData.Comparison.0.6.0\lib\net40\StructuredData.Comparison.dll</HintPath>
+      <HintPath>..\packages\StructuredData.Comparison.0.8.0\lib\net40\StructuredData.Comparison.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

@@ -6,9 +6,9 @@ using StructuredData.Comparison.Xml.Extensions;
 
 namespace StructuredData.Comparison.Xml.Conversion
 {
-    public class XElementConverter : IConvertToStructuredDataNodes
+    public class XElementConverter
     {
-        public IStructuredDataNode Convert(XElement element)
+        public static IStructuredDataNode Convert(XElement element)
         {
             if (element == null)
             {
@@ -25,7 +25,7 @@ namespace StructuredData.Comparison.Xml.Conversion
                 Name = name, 
                 IsValue = !element.HasElements,
                 Value = element.HasElements ? null : element.Value,
-                Children = element.Elements().Select(el => new XElementConverter().Convert(el)),
+                Children = element.Elements().Select(Convert),
                 Path = element.GetAbsoluteXPath()
             };
             return ret;

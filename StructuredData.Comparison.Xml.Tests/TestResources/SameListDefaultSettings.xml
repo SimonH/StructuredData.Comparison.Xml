@@ -3,9 +3,6 @@
   <value>first</value>
   <anotherValue>second</anotherValue>
   <MyList>
-    <StructuredData.Comparison_Settings>
-      <ListOptions>Strict,Ordered</ListOptions>
-    </StructuredData.Comparison_Settings>
     <ListItem>
       <First>one</First>
       <Second>eins</Second>
