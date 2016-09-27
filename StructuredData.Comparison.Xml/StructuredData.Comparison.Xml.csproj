@@ -30,8 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MimeTypeMap, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediaTypeMap.2.1.0.0\lib\net40\MimeTypeMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="StructuredData.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructuredData.Common.0.9.0\lib\net40\StructuredData.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="StructuredData.Comparison, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\StructuredData.Comparison.0.8.0\lib\net40\StructuredData.Comparison.dll</HintPath>
+      <HintPath>..\packages\StructuredData.Comparison.0.9.0\lib\net40\StructuredData.Comparison.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -47,7 +55,6 @@
   <ItemGroup>
     <Compile Include="Conversion\XElementConverter.cs" />
     <Compile Include="Exports\WalkerCreator.cs" />
-    <Compile Include="Exports\XmlMimeType.cs" />
     <Compile Include="Extensions\XPathExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlDataWalker.cs" />
