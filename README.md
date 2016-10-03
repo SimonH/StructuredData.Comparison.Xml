@@ -1,7 +1,7 @@
 # StructuredData.Comparison.Xml
 An implementation of [StructuredData.Comparison](https://github.com/SimonH/StructuredData.Comparison) for Xml (using LINQ to Xml)
 
-Available on [Nuget]((https://www.nuget.org/packages/StructuredData.Comparison.Xml
+Available on [Nuget](https://www.nuget.org/packages/StructuredData.Comparison.Xml)
 
 ##Usage
 
